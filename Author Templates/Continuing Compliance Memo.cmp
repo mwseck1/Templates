@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hd:componentLibrary xmlns:hd="http://www.hotdocs.com/schemas/component_library/2009" version="12">
+	<hd:preferences>
+		<hd:preference name="MAX_REPEAT_COUNT">100</hd:preference>
+		<hd:preference name="MAX_STACK_DEPTH">100</hd:preference>
+	</hd:preferences>
+	<hd:components>
+		<hd:text name="Client City" />
+		<hd:text name="Client Name" />
+		<hd:text name="Client State" />
+		<hd:text name="Client Street Address" />
+		<hd:text name="Company Name" />
+		<hd:text name="Other State Name" />
+		<hd:number name="Client Zipcode" />
+		<hd:date name="Date" />
+		<hd:trueFalse name="Has Books And Records Article" />
+		<hd:trueFalse name="Is In St Louis" />
+		<hd:dialog name="Client Information">
+			<hd:contents>
+				<hd:item name="Client Name" />
+				<hd:item name="Client Street Address" />
+				<hd:item name="Client City" />
+				<hd:item name="Client State" />
+				<hd:item name="Client Zipcode" />
+			</hd:contents>
+		</hd:dialog>
+		<hd:dialog name="Company Information">
+			<hd:contents>
+				<hd:item name="Company Name" />
+				<hd:item name="Company Formation/Domestic State" />
+				<hd:item name="Other State Name" />
+				<hd:item name="Company Entity Type" />
+				<hd:item name="Company Tax Type" />
+				<hd:item name="Has Books And Records Article" />
+				<hd:item name="Is In St Louis" />
+			</hd:contents>
+		</hd:dialog>
+		<hd:multipleChoice name="Company Entity Type_SelectionVariable">
+			<hd:options>
+				<hd:option name="BUILTIN_AnswerSource" />
+			</hd:options>
+			<hd:singleSelection style="dropDownList" />
+		</hd:multipleChoice>
+		<hd:computation name="Company Entity Type.BUILTIN_OptionTable">
+			<hd:script>QUIT
+{"Fields":[{"IsKey":true,"Name":"Key","Type":1}],"Rows":[["Limited Liability Company"],["Corporation"]]}</hd:script>
+		</hd:computation>
+		<hd:multipleChoice name="Company Formation/Domestic State_SelectionVariable">
+			<hd:options>
+				<hd:option name="BUILTIN_AnswerSource" />
+			</hd:options>
+			<hd:singleSelection style="dropDownList" />
+		</hd:multipleChoice>
+		<hd:computation name="Company Formation/Domestic State.BUILTIN_OptionTable">
+			<hd:script>QUIT
+{"Fields":[{"IsKey":true,"Name":"Key","Type":1}],"Rows":[["Kansas"],["Missouri"],["Other"]]}</hd:script>
+		</hd:computation>
+		<hd:multipleChoice name="Company Tax Type_SelectionVariable">
+			<hd:options>
+				<hd:option name="BUILTIN_AnswerSource" />
+			</hd:options>
+			<hd:singleSelection style="dropDownList" />
+		</hd:multipleChoice>
+		<hd:computation name="Company Tax Type.BUILTIN_OptionTable">
+			<hd:script>QUIT
+{"Fields":[{"IsKey":true,"Name":"Key","Type":1}],"Rows":[["Disregarded Entity\/Single Member Entity"],["Partnership"],["C Corporation"],["S Corporation"]]}</hd:script>
+		</hd:computation>
+	</hd:components>
+</hd:componentLibrary>

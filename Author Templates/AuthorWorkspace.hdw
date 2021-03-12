@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hd:authorWorkspaceProperties xmlns:hd="http://www.hotdocs.com/schemas/author_workspace_properties/2017" id="62de58e9-e6a8-428d-b3a4-e8055b00a4e6" version="1">
+	<hd:uploadDestinations>
+		<hd:uploadDestination>
+			<hd:property name="AuthorizationUrl"></hd:property>
+			<hd:property name="ClientId"></hd:property>
+			<hd:property name="HubProductType">HotDocsAdvance</hd:property>
+			<hd:property name="IdentityServer"></hd:property>
+			<hd:property name="Name">Home</hd:property>
+			<hd:property name="RedirectUrl"></hd:property>
+			<hd:property name="ReturnUrl"></hd:property>
+			<hd:property name="Secret"></hd:property>
+			<hd:property name="SessionUrl"></hd:property>
+			<hd:property name="UploadUrl">https://seckassociates.hotdocsadvance.com/templates</hd:property>
+		</hd:uploadDestination>
+		<hd:uploadDestination>
+			<hd:property name="AuthorizationUrl">https://seckassociates.hotdocsadvance.com/auth/Authorize/LogIn?clientName=AdvanceUi&amp;returnUrl=https://seckassociates.hotdocsadvance.com/Account/LoggedIn</hd:property>
+			<hd:property name="HubProductType">HotDocsAdvance</hd:property>
+			<hd:property name="Name">seckassociates</hd:property>
+			<hd:property name="RedirectUrl">https://seckassociates.hotdocsadvance.com/templates</hd:property>
+			<hd:property name="ReturnUrl">https://seckassociates.hotdocsadvance.com/Account/LoggedIn</hd:property>
+			<hd:property name="UploadUrl">https://seckassociates.hotdocsadvance.com/api/rest/v1.1/TemplatePackages</hd:property>
+		</hd:uploadDestination>
+	</hd:uploadDestinations>
+</hd:authorWorkspaceProperties>
